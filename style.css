@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height:100%;
+    background-image:linear-gradient(to right,#CCFF99,#99FF99);
+	
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: transparent;
+    height: 100px;
+    padding: auto;
+	font-size:2em;
+}
+
+header p {
+    font-size: 50px;
+    color: Black;
+    font-weight: normal;
+    text-align: center;
+}
+.img-profile{
+    width: 25%;
+    border-radius: 50%;
+	float: right;
+	padding: 20px;
+	border:none;
+	
+}
+ h1{
+ font-size:40px;
+    color: #000000;
+    font-family: sans-serif;
+    font-weight: normal;
+	padding:10px;
+   text-align: center;
+ }
+.box-txt {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+    /* border: 1px solid green; */
+}
+
+.box-txt span {
+    color: gray;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.btn-hero {
+    background: #000000;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+    font-weight: bold;
+	cursor: pointer
+}
+
+.btn-hero:hover {
+    background: green;
+    font-size: 18px;
+}
+
+.box-item {
+    width: 30%;
+    height: 380px;
+    background: #000000;
+    margin: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 10px;
+	color:#ffffff;
+	font-size:20px;
+}
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+	
+    /* border: 1px solid red; */
+}
+
+.m-top {
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background: transparent;
+    height: 100px;
+    color: Black;
+    font-size: 22px;
+}
+@media (max-width: 768px) {
+    header p {
+        font-size: 30px; /* Ajuste para telas menores */
+    }
+
+    .img-profile {
+        width: 50%; /* Reduz a largura da imagem */
+        float: none;
+        margin: 10px auto; /* Centraliza a imagem */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajuste no tamanho do texto */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .box-item {
+        width: 90%; /* Ocupa toda a largura disponível */
+        margin:10px auto; /* Espaçamento entre os itens */
+    }
+
+    .especialidades {
+        width: 100%; /* Ocupa toda a largura em telas menores */
+        margin-left: 0;
+    }
+
+    .btn-hero {
+        width: 80%; /* Ajusta o tamanho do botão */
+        margin: 20px auto; /* Centraliza o botão */
+    }
+
+    footer {
+        font-size: 14px; /* Reduz o tamanho do texto no rodapé */
+    }
+}
